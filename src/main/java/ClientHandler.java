@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 import java.util.Arrays;
 import java.util.List;
@@ -27,61 +24,57 @@ public class ClientHandler extends Thread {
 
             String input;
             while ((input = reader.readLine()) != null) {
-
-                if (input.equals("LIST_MUSIC")) {
-                    // Aggregate and send the list of all available music files
-                    String musicList = getAllMusicFiles();
-                    writer.println(musicList);
-                    Logger.log("INFO", "Sent music list to " + clientSocket.getInetAddress().getHostAddress());
-                    System.out.println("Sent music list to " + clientSocket.getInetAddress().getHostAddress());
-                }
-
-                if (input.startsWith("REGISTER")) {
-                    // Registration logic
-                    String[] parts = input.split(" ");
-                    String clientId = parts[1];
-                    List<String> fileList = Arrays.asList(parts).subList(2, parts.length);
-
-                    ClientInfo clientInfo = new ClientInfo(clientId, clientSocket.getInetAddress(), fileList);
-                    clientList.put(clientId, clientInfo);
-                    Logger.log("INFO", "Registered client: " + clientId + " with files: " + fileList);
-                    System.out.println("Registered client: " + clientId + " with files: " + fileList);
-                } else if (input.equals("REQUEST_CLIENT_LIST")) {
-                    // Send back the list of clients
-                    String clientListString = clientList.entrySet().stream()
-                            .map(entry -> entry.getKey() + " - " + entry.getValue().getAudioFiles())
-                            .collect(Collectors.joining(", "));
-                    writer.println(clientListString);
-                    Logger.log("INFO", "Sent client list to " + clientSocket.getInetAddress().getHostAddress());
-                    System.out.println("Sent client list to " + clientSocket.getInetAddress().getHostAddress());
-                } else if (input.startsWith("REQUEST_FILE")) {
-                    // Process file request
-                    String[] parts = input.split(" ");
-                    String targetClientId = parts[1];
-                    String requestedFile = parts[2];
-
-                    ClientInfo targetClient = clientList.get(targetClientId);
-                    if (targetClient != null && targetClient.getAudioFiles().contains(requestedFile)) {
-                        // Send target client's IP address and file info back to the requester
-                        writer.println(targetClient.getIpAddress().getHostAddress() + " " + requestedFile);
-                    } else {
-                        writer.println("ERROR: Client not found or file not available");
-                    }
-                    Logger.log("INFO", "Processed file request for " + requestedFile + " from " + targetClientId);
-                    System.out.println("Processed file request for " + requestedFile + " from " + targetClientId);
-                }
+                processClientCommand(input, writer);
             }
         } catch (IOException e) {
-            Logger.log("ERROR", "Error in ClientHandler: " + e.getMessage());
-            System.out.println("Error in ClientHandler: " + e.getMessage());
             e.printStackTrace();
+        } finally {
+            cleanupClientResources();
         }
     }
 
-    private String getAllMusicFiles() {
-        return clientList.values().stream()
-                .flatMap(clientInfo -> clientInfo.getAudioFiles().stream())
-                .distinct()
-                .collect(Collectors.joining(", "));
+    private void processClientCommand(String input, PrintWriter writer) {
+        if (input.startsWith("REGISTER")) {
+            handleRegisterCommand(input, writer);
+        } else if (input.equals("LIST_MUSIC")) {
+            handleListMusicCommand(writer);
+        } else {
+            writer.println("ERROR: Unknown command");
+        }
+    }
+
+    private void handleRegisterCommand(String input, PrintWriter writer) {
+        String[] parts = input.split(" ");
+        String clientId = parts[1];
+    
+        if (!clientList.containsKey(clientId)) {
+            List<String> fileList = Arrays.asList(parts).subList(2, parts.length);
+            ClientInfo clientInfo = new ClientInfo(clientId, clientSocket.getInetAddress(), fileList);
+            clientList.put(clientId, clientInfo);
+            writer.println("REGISTERED " + clientId);
+    
+            // Log client login to the console
+            System.out.println("INFO: Client " + clientId + " logged in from " + clientSocket.getInetAddress());
+        } else {
+            writer.println("ERROR: Client already registered");
+        }
+    }
+    
+
+    private void handleListMusicCommand(PrintWriter writer) {
+        StringBuilder musicList = new StringBuilder();
+        clientList.forEach((clientId, clientInfo) -> {
+            clientInfo.getAudioFiles().forEach(song -> musicList.append(clientId).append(" - ").append(song).append("\n"));
+        });
+        writer.print(musicList.toString());
+        writer.println("END_OF_LIST"); // Add a newline character after the list
+    }     
+
+    private void cleanupClientResources() {
+        try {
+            clientSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

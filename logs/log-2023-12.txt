@@ -1,0 +1,277 @@
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: ClientB with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: ClientA with files: [song2.mp3]
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Server started on port: 45000
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: adrinao with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent IP and port to Adriano
+2023-12-13 [INFO] Sent IP and port to Pedro
+2023-12-13 [INFO] Sent IP and port to Pedro
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client list to 127.0.0.1
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: PEdro with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song2.mp3]
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent IP and port to Pedro
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent IP and port to Adriano
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Sent music list to 127.0.0.1
+2023-12-13 [INFO] Sent client info to 127.0.0.1
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Miguel with files: [song1.mp3]
+2023-12-13 [INFO] Registered client: Miguel with files: [song1.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [, song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [, song2.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: []
+2023-12-13 [INFO] Registered client: Pedro with files: []
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-13 [INFO] Registered client: Pedro with files: [song1.mp3]
+2023-12-13 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Server started on port: 45000
+2023-12-14 [INFO] Registered client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Registered new client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Registered new client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adrianoù with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song2.mp3]
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [song2.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [WARNING] Received unknown command: list
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Adriano with files: [, song2.mp3]
+2023-12-14 [WARNING] Received unknown command: list
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [WARNING] Received unknown command: list
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [WARNING] Received unknown command: info Adriano
+2023-12-14 [WARNING] Received unknown command: REQUEST_CLIENT_INFO
+2023-12-14 [WARNING] Received unknown command: Adriano
+2023-12-14 [WARNING] Received unknown command: request Adriano song2.mp3
+2023-12-14 [WARNING] Received unknown command: REQUEST_CLIENT_FOR_SONG Adriano song2.mp3
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Registered new client: Adriano with files: [song2.mp3]
+2023-12-14 [WARNING] Received unknown command: list
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Registered new client: Pedro with files: [song1.mp3]
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [WARNING] Received unknown command: Adriano
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [WARNING] Received unknown command: Pedro
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [INFO] Sent music list to 127.0.0.1
+2023-12-14 [ERROR] Error in ClientHandler: Connection reset
+2023-12-14 [INFO] Sent music list to 127.0.0.1
