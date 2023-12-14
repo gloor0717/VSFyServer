@@ -51,7 +51,6 @@ public class ClientHandler extends Thread {
             List<String> fileList = Arrays.asList(parts).subList(2, parts.length);
             ClientInfo clientInfo = new ClientInfo(clientId, clientSocket.getInetAddress(), fileList);
             clientList.put(clientId, clientInfo);
-            writer.println("REGISTERED " + clientId);
     
             // Log client login to the console
             System.out.println("INFO: Client " + clientId + " logged in from " + clientSocket.getInetAddress());
