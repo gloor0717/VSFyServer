@@ -17,21 +17,19 @@ public class VSFyServer {
                     Socket clientSocket = serverSocket.accept();
                     new ClientHandler(clientSocket).start();
                 } catch (IOException e) {
-                    Logger.log("ERROR", "Error accepting client connection: " + e.getMessage());
+                    System.err.println("Error accepting client connection: " + e.getMessage());
                     e.printStackTrace();
                 }
             }
             System.out.println("VSFy Server start method completed.");
         } catch (IOException e) {
-            Logger.log("ERROR", "Error starting server: " + e.getMessage());
+            System.err.println("Error starting server: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args) {
-        System.out.println("VSFy Server launching...");
         VSFyServer server = new VSFyServer();
         server.start();
-        System.out.println("VSFy Server main method completed.");
     }
 }
