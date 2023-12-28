@@ -30,7 +30,9 @@ public class ClientHandler extends Thread {
     }
 
     private void processClientCommand(String input, PrintWriter writer) {
-        if (input.startsWith("REGISTER")) {
+        if (input.startsWith("UPDATE_PORT")){
+            handleUpdatePortCommand(input, writer);
+        } else if (input.startsWith("REGISTER")) {
             handleRegisterCommand(input, writer);
         } else if (input.startsWith("REQUEST_SONG")) {
             handleSongRequestCommand(input, writer);
@@ -40,6 +42,20 @@ public class ClientHandler extends Thread {
             handleListMusicCommand(writer);
         } else {
             writer.println("ERROR: Unknown command");
+        }
+    }
+
+    private void handleUpdatePortCommand(String input, PrintWriter writer) {
+        String[] parts = input.split(" ");
+        String clientId = parts[1];
+        int newP2PPort = Integer.parseInt(parts[2]);
+    
+        if (clientList.containsKey(clientId)) {
+            ClientInfo clientInfo = clientList.get(clientId);
+            clientInfo.setP2PPort(newP2PPort);
+            writer.println("PORT_UPDATED");
+        } else {
+            writer.println("ERROR: Client not found for port update");
         }
     }
 
@@ -90,12 +106,17 @@ public class ClientHandler extends Thread {
         String[] parts = input.split(" ");
         String songName = parts[1];
 
-        // Logic to find a client with the requested song and send back its address
+        System.out.println("ClientHandler: Processing song request for " + songName);
         clientList.values().stream()
                 .filter(info -> info.getAudioFiles().contains(songName))
                 .findFirst()
-                .ifPresent(clientInfo -> writer.println(
-                        "PEER_ADDRESS " + clientInfo.getIpAddress().getHostAddress() + " " + clientInfo.getP2PPort()));
+                .ifPresent(clientInfo -> {
+                    System.out.println("ClientHandler: Found client with song. Sending peer address.");
+                    System.out.println("ClientHandler: Sending response - " + "PEER_ADDRESS "
+                            + clientInfo.getIpAddress().getHostAddress() + " " + clientInfo.getP2PPort());
+                    writer.println("PEER_ADDRESS " + clientInfo.getIpAddress().getHostAddress() + " "
+                            + clientInfo.getP2PPort());
+                });
     }
 
     private void cleanupClientResources() {
