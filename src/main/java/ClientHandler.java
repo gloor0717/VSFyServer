@@ -103,20 +103,33 @@ public class ClientHandler extends Thread {
     }
 
     private void handleSongRequestCommand(String input, PrintWriter writer) {
+        String songName = extractSongName(input);
+        ClientInfo clientInfo = findClientWithSong(songName);
+    
+        if (clientInfo != null) {
+            sendPeerAddressResponse(clientInfo, writer);
+        } else {
+            writer.println("ERROR: Song not found");
+        }
+    }
+    
+    private String extractSongName(String input) {
         String[] parts = input.split(" ");
-        String songName = parts[1];
-
-        System.out.println("ClientHandler: Processing song request for " + songName);
-        clientList.values().stream()
-                .filter(info -> info.getAudioFiles().contains(songName))
-                .findFirst()
-                .ifPresent(clientInfo -> {
-                    System.out.println("ClientHandler: Found client with song. Sending peer address.");
-                    System.out.println("ClientHandler: Sending response - " + "PEER_ADDRESS "
-                            + clientInfo.getIpAddress().getHostAddress() + " " + clientInfo.getP2PPort());
-                    writer.println("PEER_ADDRESS " + clientInfo.getIpAddress().getHostAddress() + " "
-                            + clientInfo.getP2PPort());
-                });
+        return parts.length > 1 ? parts[1] : "";
+    }
+    
+    private ClientInfo findClientWithSong(String songName) {
+        return clientList.values().stream()
+                         .filter(info -> info.getAudioFiles().contains(songName))
+                         .findFirst()
+                         .orElse(null);
+    }
+    
+    private void sendPeerAddressResponse(ClientInfo clientInfo, PrintWriter writer) {
+        String response = "PEER_ADDRESS " + clientInfo.getIpAddress().getHostAddress() + " " + clientInfo.getP2PPort();
+        writer.println(response);
+        writer.flush();
+        System.out.println("ClientHandler: Sent response - " + response);
     }
 
     private void cleanupClientResources() {
