@@ -53,9 +53,9 @@ public class ClientHandler extends Thread {
         if (clientList.containsKey(clientId)) {
             ClientInfo clientInfo = clientList.get(clientId);
             clientInfo.setP2PPort(newP2PPort);
-            writer.println("PORT_UPDATED");
+            //writer.println("PORT_UPDATED");
         } else {
-            writer.println("ERROR: Client not found for port update");
+            //writer.println("ERROR: Client not found for port update");
         }
     }
 
@@ -96,7 +96,7 @@ public class ClientHandler extends Thread {
             ClientInfo clientInfo = new ClientInfo(clientId, clientSocket.getInetAddress(), fileList, clientP2PPort);
             clientList.put(clientId, clientInfo);
 
-            writer.println("REGISTERED");
+            //writer.println("REGISTERED");
         } else {
             writer.println("ERROR: Client already registered");
         }
