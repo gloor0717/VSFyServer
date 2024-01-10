@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ClientHandler extends Thread {
     private Socket clientSocket;
     private static final ConcurrentHashMap<String, ClientInfo> clientList = new ConcurrentHashMap<>();
+    private String clientId;
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
@@ -23,8 +24,10 @@ public class ClientHandler extends Thread {
             }
         } catch (IOException e) {
             System.err.println("Error handling client connection: " + e.getMessage());
-            e.printStackTrace();
-        } finally {
+            if (clientId != null) {
+                clientList.remove(clientId);
+                System.out.println("Client " + clientId + " disconnected and removed from list.");
+            }
             cleanupClientResources();
         }
     }
@@ -88,7 +91,7 @@ public class ClientHandler extends Thread {
 
     private void handleRegisterCommand(String input, PrintWriter writer) {
         String[] parts = input.split(" ");
-        String clientId = parts[1];
+        clientId = parts[1];
         int clientP2PPort = Integer.parseInt(parts[2]); // Get the client's P2P port
 
         if (!clientList.containsKey(clientId)) {
@@ -133,10 +136,13 @@ public class ClientHandler extends Thread {
     }
 
     private void cleanupClientResources() {
+        // Close resources if needed
         try {
-            clientSocket.close();
+            if (clientSocket != null && !clientSocket.isClosed()) {
+                clientSocket.close();
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error closing client socket: " + e.getMessage());
         }
     }
 }
