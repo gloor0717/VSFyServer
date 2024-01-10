@@ -68,7 +68,7 @@ public class ClientHandler extends Thread {
             ClientInfo clientInfo = clientList.get(clientId);
             clientInfo.setP2PPort(newP2PPort);
         } else {
-            writer.println("ERROR: Client not found for port update");
+            // writer.println("ERROR: Client not found for port update");
         }
     }
 
