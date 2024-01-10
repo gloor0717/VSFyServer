@@ -24,16 +24,26 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>VSFyServer</mainClass> <!-- Replace with your main class -->
+                            <mainClass>VSFyServer</mainClass>
                         </manifest>
                     </archive>
+                </configuration>
+            </plugin>
+            
+            <!-- Maven JavaDoc Plugin configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <outputDirectory>target/javadoc</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-    <!-- Add dependencies here -->
+    
     <dependencies>
-        <!-- Your dependencies -->
+        
     </dependencies>
 </project>
